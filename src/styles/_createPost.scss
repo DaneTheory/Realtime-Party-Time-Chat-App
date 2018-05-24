@@ -1,0 +1,163 @@
+.createPost__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 634px;
+    display: flex;
+    margin: auto auto;
+}
+
+.createPost__input__wrapper--valid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 48px;
+  border-top: 1px solid #00C397;
+  border-bottom: 1px solid #00C397;
+}
+
+.createPost__input__wrapper--invalid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 48px;
+  border-top: 1px solid #FF6F6C;
+  border-bottom: 1px solid #FF6F6C;
+}
+
+.createPost__characterCounter h4 {
+    width: 13px;
+    height: 13px;
+    font-family: Roboto;
+    font-size: 11px;
+    text-align: left;
+    margin: 0;
+}
+
+.createPost__characterCounter__wrapper {
+    display: inline-flex;
+    padding-left: 7px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 17px;
+}
+
+.createPost__submitButton--valid svg {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: left;
+    fill: #00c397;
+    z-index: 100;
+}
+
+.createPost__submitButton--invalid svg {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: left;
+    fill: #B1BEBE;
+}
+
+.createPost__submitButton--valid {
+    padding: 14px;
+    cursor: pointer;
+}
+
+.createPost__submitButton--invalid {
+    padding: 14px;
+    cursor: not-allowed;
+}
+
+.createPost__userInput__wrapper {
+    display: flex;
+    width: 100%;
+}
+
+form.createPost__userInput {
+    display: flex;
+    width: 100%;
+}
+
+textarea.userInput {
+  padding: 0;
+      resize: none;
+      white-space: nowrap;
+      word-wrap: unset;
+      border: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      overflow: hidden;
+      display: flex;
+      width: 100%;
+      font-size: 2.5rem;
+      margin: 0;
+      line-height: 1.2;
+      margin: 0 auto;
+      font-weight: 300;
+      color: #757575;
+      display: flex;
+}
+
+textarea.userInput:focus {
+  outline: none;
+}
+
+form.createPost__userInput > span {
+  margin: auto 0;
+  font-size: 1.75rem;
+}
+
+form.createPost__userInput > span::after {
+  content: "";
+  opacity: 1 !important;
+  // background: rgba(0,0,0,0.5);
+  // border-color: rgba(0,0,0,0.5);
+  border-right: 2px dotted transparent;
+  animation: 'PulseAttention' 0.8s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+}
+@keyframes PulseAttention {
+    50% {
+        border-color: rgba(9, 40, 40, 0.65);
+    }
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 13px;
+  color: rgba(9, 40, 40, 0.35);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.Typist.animatedPlaceholder {
+    display: flex;
+    margin: 1rem auto;
+    margin-top: -25%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-shadow: -1px 0px 15px rgba(71, 72, 72, 1);
+    max-width: 550px;
+    font-size: 1.75rem;
+    text-align: -webkit-center;
+    font-weight: 600;
+    color: #00c397;
+    text-shadow: -2px 2px 3px rgba(71, 72, 72, 1);
+    font-variant: titling-caps;
+    background: rgba(71, 72, 72, 0.65);
+    border-radius: 8px;
+}
