@@ -34,7 +34,7 @@
     "fs-jetpack": "^1.2.0",
     "material-design-icons": "3.0.1",
     "material-ui": "^1.0.0-beta.20",
-    "moment": "^2.19.1",
+    "moment": "^2.29.2",
     "moment-es6": "^1.0.0",
     "node-dir": "^0.1.17",
     "object-assign": "4.1.0",
